@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | 00zheng</title>
+  <meta name="description" content="Contact Gavin.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-shape bg-shape-1"></div>
+  <div class="bg-shape bg-shape-2"></div>
+
+  <header class="site-header container reveal">
+    <a class="logo" href="index.html">00zheng</a>
+  </header>
+
+  <main>
+    <section class="page-hero container reveal">
+      <p class="kicker">Contact</p>
+      <h1>Let's connect.</h1>
+      <p class="subtitle">Send a private note below. The inbox is locked and only visible with the owner password.</p>
+    </section>
+
+    <section class="container message-layout reveal page-content" aria-label="Private message system">
+      <article class="message-card">
+        <h2>Send a message</h2>
+        <p class="message-helper">Leave your note here. It will be saved and can be viewed only after owner login.</p>
+
+        <form id="contactMessageForm" class="message-form" novalidate>
+          <label for="senderName">Name</label>
+          <input id="senderName" name="senderName" type="text" maxlength="60" placeholder="Your name" required>
+
+          <label for="senderEmail">Email (optional)</label>
+          <input id="senderEmail" name="senderEmail" type="email" maxlength="120" placeholder="you@example.com">
+
+          <label for="senderMessage">Message</label>
+          <textarea id="senderMessage" name="senderMessage" rows="6" maxlength="1200" placeholder="Write your message" required></textarea>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p id="messageFormStatus" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </article>
+
+      <aside class="message-card owner-card" aria-label="Owner inbox">
+        <h2>Owner inbox</h2>
+        <p class="message-helper">Enter the owner password to unlock private messages.</p>
+
+        <form id="ownerUnlockForm" class="owner-unlock" novalidate>
+          <label for="ownerPassword">Owner password</label>
+          <div class="owner-inline">
+            <input id="ownerPassword" type="password" autocomplete="current-password" required>
+            <button type="submit" class="btn btn-outline">Unlock</button>
+          </div>
+          <p id="ownerUnlockStatus" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+        <p class="message-helper">After unlock, messages will appear in the inbox area below.</p>
+      </aside>
+    </section>
+
+    <section id="ownerInbox" class="container message-card owner-inbox-area reveal" aria-label="Owner message inbox" hidden>
+      <div class="owner-inbox-header">
+        <h2>Private messages</h2>
+        <button type="button" id="clearMessagesBtn" class="btn btn-outline clear-btn">Clear All</button>
+      </div>
+      <p id="ownerCount" class="owner-count">0 messages</p>
+      <ul id="ownerMessageList" class="owner-message-list" aria-live="polite"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer container reveal">
+    <p>Thanks for visiting.</p>
+    <a href="https://www.instagram.com/gvn.zheng/">Instagram</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

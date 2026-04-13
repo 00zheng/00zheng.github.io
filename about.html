@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | 00zheng</title>
+  <meta name="description" content="About Gavin and current interests.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-shape bg-shape-1"></div>
+  <div class="bg-shape bg-shape-2"></div>
+
+  <header class="site-header container reveal">
+    <a class="logo" href="index.html">00zheng</a>
+  </header>
+
+  <main>
+    <section class="container desk reveal" aria-label="Digital desk">
+      <div class="desk-surface" role="tablist" aria-label="Digital desk items">
+        <button class="desk-item desk-item-notebook is-active" type="button" role="tab" aria-selected="true" data-desk-target="journal">
+          <span class="sr-only">Notebook</span>
+          <svg class="desk-art" viewBox="0 0 160 120" aria-hidden="true">
+            <defs>
+              <linearGradient id="notebookCover" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#333842" />
+                <stop offset="100%" stop-color="#23262d" />
+              </linearGradient>
+              <linearGradient id="notebookPage" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#fbfbfb" />
+                <stop offset="100%" stop-color="#e8e8e8" />
+              </linearGradient>
+            </defs>
+            <rect x="16" y="18" width="128" height="84" rx="9" fill="url(#notebookCover)" />
+            <rect x="30" y="24" width="92" height="72" rx="4" fill="url(#notebookPage)" />
+            <rect x="24" y="22" width="5" height="76" rx="2.5" fill="#9da4af" />
+            <circle cx="26.5" cy="34" r="1.8" fill="#646c78" />
+            <circle cx="26.5" cy="48" r="1.8" fill="#646c78" />
+            <circle cx="26.5" cy="62" r="1.8" fill="#646c78" />
+            <circle cx="26.5" cy="76" r="1.8" fill="#646c78" />
+            <rect x="38" y="34" width="74" height="2" rx="1" fill="#cad0d8" />
+            <rect x="38" y="46" width="74" height="2" rx="1" fill="#cad0d8" />
+            <rect x="38" y="58" width="62" height="2" rx="1" fill="#cad0d8" />
+            <rect x="38" y="70" width="68" height="2" rx="1" fill="#cad0d8" />
+          </svg>
+          <span class="desk-label">Notebook</span>
+        </button>
+        <button class="desk-item desk-item-headphones" type="button" role="tab" aria-selected="false" data-desk-target="songs">
+          <span class="sr-only">Headphones</span>
+          <svg class="desk-art" viewBox="0 0 160 120" aria-hidden="true">
+            <defs>
+              <linearGradient id="headband" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#2f3338" />
+                <stop offset="100%" stop-color="#121416" />
+              </linearGradient>
+            </defs>
+            <path d="M44 80v-8c0-20 16-36 36-36s36 16 36 36v8" fill="none" stroke="url(#headband)" stroke-width="10" stroke-linecap="round"/>
+            <rect x="30" y="70" width="22" height="30" rx="8" fill="#1f2328" />
+            <rect x="108" y="70" width="22" height="30" rx="8" fill="#1f2328" />
+            <rect x="34" y="74" width="14" height="22" rx="6" fill="#98a1ab" />
+            <rect x="112" y="74" width="14" height="22" rx="6" fill="#98a1ab" />
+            <rect x="57" y="34" width="46" height="10" rx="5" fill="#4d535c" />
+          </svg>
+          <span class="desk-label">Headphones</span>
+        </button>
+        <button class="desk-item desk-item-camera" type="button" role="tab" aria-selected="false" data-desk-target="photos">
+          <span class="sr-only">Camera</span>
+          <svg class="desk-art" viewBox="0 0 160 120" aria-hidden="true">
+            <defs>
+              <linearGradient id="cameraBody" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#252a31" />
+                <stop offset="100%" stop-color="#111317" />
+              </linearGradient>
+              <radialGradient id="lens" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#9fb8d8" />
+                <stop offset="36%" stop-color="#3f5470" />
+                <stop offset="100%" stop-color="#0c1117" />
+              </radialGradient>
+            </defs>
+            <rect x="20" y="38" width="120" height="62" rx="12" fill="url(#cameraBody)" />
+            <rect x="40" y="30" width="30" height="12" rx="4" fill="#1b2026" />
+            <rect x="110" y="46" width="14" height="6" rx="3" fill="#4b525c" />
+            <circle cx="80" cy="69" r="24" fill="#1f252e" />
+            <circle cx="80" cy="69" r="18" fill="url(#lens)" />
+            <circle cx="80" cy="69" r="10" fill="#10161d" />
+            <circle cx="74" cy="63" r="4.2" fill="rgba(255,255,255,0.28)" />
+          </svg>
+          <span class="desk-label">Camera</span>
+        </button>
+        <button class="desk-item desk-item-book" type="button" role="tab" aria-selected="false" data-desk-target="reading">
+          <span class="sr-only">Book</span>
+          <svg class="desk-art" viewBox="0 0 160 120" aria-hidden="true">
+            <defs>
+              <linearGradient id="bookCover" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#7c2626" />
+                <stop offset="100%" stop-color="#4f1717" />
+              </linearGradient>
+              <linearGradient id="bookPage" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#f7f2e8" />
+                <stop offset="100%" stop-color="#ddd4c4" />
+              </linearGradient>
+            </defs>
+            <rect x="18" y="24" width="124" height="76" rx="8" fill="url(#bookCover)" />
+            <rect x="28" y="30" width="48" height="64" rx="2" fill="url(#bookPage)" />
+            <rect x="84" y="30" width="48" height="64" rx="2" fill="url(#bookPage)" />
+            <rect x="78" y="30" width="4" height="64" rx="2" fill="#8a7f73" />
+            <rect x="36" y="42" width="34" height="2" rx="1" fill="#c4b8a6" />
+            <rect x="90" y="42" width="34" height="2" rx="1" fill="#c4b8a6" />
+            <rect x="36" y="54" width="30" height="2" rx="1" fill="#c4b8a6" />
+            <rect x="90" y="54" width="30" height="2" rx="1" fill="#c4b8a6" />
+          </svg>
+          <span class="desk-label">Book</span>
+        </button>
+      </div>
+
+      <article class="desk-panel is-active" data-desk-panel="journal" role="tabpanel">
+        <h3>Journal Thoughts</h3>
+        <p>Shipping small things every week teaches me more than waiting for perfect ideas.</p>
+      </article>
+
+      <article class="desk-panel" data-desk-panel="songs" role="tabpanel" hidden>
+        <h3>Favorite Songs</h3>
+        <p>Current loop: mellow house, ambient piano, and late-night synth playlists.</p>
+      </article>
+
+      <article class="desk-panel" data-desk-panel="photos" role="tabpanel" hidden>
+        <h3>Favorite Photos</h3>
+        <p>I like high-contrast street shots, desk setup details, and night scenes with motion blur.</p>
+      </article>
+
+      <article class="desk-panel" data-desk-panel="reading" role="tabpanel" hidden>
+        <h3>Current Reading</h3>
+        <p>Books and essays on design systems, habit loops, and building products that stay simple.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer container reveal">
+    <a href="https://www.instagram.com/gvn.zheng/">Instagram</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
