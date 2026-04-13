@@ -102,7 +102,6 @@ const pageFlow = [
   { name: 'Home', href: 'index.html', teaser: 'Landing page and quick links.' },
   { name: 'Projects', href: 'projects.html', teaser: 'Current work and recent builds.' },
   { name: 'About', href: 'about.html', teaser: 'Background, focus, and interests.' },
-  { name: 'Photos', href: 'photos.html', teaser: 'Snapshots and visual experiments.' },
   { name: 'Contact', href: 'contact.html', teaser: 'Ways to reach and connect.' }
 ];
 
