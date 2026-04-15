@@ -274,7 +274,7 @@ h1 {
 
 .btn-primary {
   background: var(--brand);
-  color: #ff0000;
+  color: #000000;
   box-shadow: var(--shadow);
 }
 
